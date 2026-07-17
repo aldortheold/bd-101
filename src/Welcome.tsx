@@ -11,7 +11,7 @@ function Welcome() {
             transition={{ duration: 0.45, ease: "easeOut" }}
         >
             <div className="welcome__content">
-                <p className="eyebrow">Для самой чудесной тёти</p>
+                <p className="eyebrow">Для самой лучшей тёти</p>
                 <h1>С ДНЁМ РОЖДЕНИЯ, МАРИША!</h1>
                 <h2>Собери свою особенную открытку, но сначала пройди мои задания :)</h2>
             </div>
