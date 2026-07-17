@@ -1,0 +1,468 @@
+.app-page {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: clip;
+}
+
+.welcome {
+    gap: 30px;
+}
+
+.welcome__content {
+    width: min(900px, 94vw);
+}
+
+.welcome h1,
+.result-page h1 {
+    margin: 8px 0 16px;
+    font-size: clamp(2.25rem, 6vw, 4.7rem);
+    line-height: 1.04;
+    letter-spacing: 0.025em;
+}
+
+.welcome h2 {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.eyebrow {
+    margin: 0;
+    color: #a91670;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.primary-button,
+.secondary-button {
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 9px 34px;
+    border: 3px solid #3a0015;
+    border-radius: 12px;
+    background: #ffa6de;
+    box-shadow: 0 5px 0 #3a0015;
+    color: #3a0015;
+    cursor: pointer;
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    background: #ffc2e9;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 #3a0015;
+}
+
+.primary-button:active,
+.secondary-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #3a0015;
+}
+
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.option-button:focus-visible,
+.path-button:focus-visible,
+.letter-tile:focus-visible {
+    outline: 4px solid rgba(244, 45, 148, 0.35);
+    outline-offset: 4px;
+}
+
+.primary-button svg {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    fill: currentColor;
+}
+
+.puzzle-page {
+    justify-content: flex-start;
+    gap: 18px;
+    padding-top: clamp(22px, 5vh, 54px);
+}
+
+.progress-bar {
+    width: min(700px, 92vw);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #713047;
+    font-size: 1.05rem;
+}
+
+.progress-bar__track {
+    height: 10px;
+    flex: 1;
+    overflow: hidden;
+    border: 2px solid #3a0015;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.progress-bar__fill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #ff8fd1, #d9278b);
+}
+
+.puzzle-shell {
+    width: min(760px, 94vw);
+    min-height: min(650px, calc(100dvh - 120px));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(24px, 4vw, 42px);
+    border: 2px solid rgba(58, 0, 21, 0.18);
+    border-radius: 28px;
+    background: rgba(255, 252, 254, 0.76);
+    box-shadow: 0 22px 65px rgba(88, 20, 56, 0.14);
+    backdrop-filter: blur(10px);
+}
+
+.puzzle-kicker {
+    margin: 0 0 5px;
+    color: #a91670;
+    font-size: 1.1rem;
+}
+
+.puzzle-title {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.05;
+}
+
+.puzzle-instruction {
+    max-width: 590px;
+    min-height: 1.5em;
+    margin: 10px 0 20px;
+    color: #713047;
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    line-height: 1.3;
+}
+
+.equation {
+    margin: 8px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 3vw, 20px);
+    font-family: system-ui, sans-serif;
+    font-size: clamp(2.4rem, 9vw, 5rem);
+}
+
+.equation__blank {
+    width: clamp(66px, 14vw, 100px);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border: 4px dashed #b84f88;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.82);
+    font-size: 0.72em;
+}
+
+.equation__blank--error {
+    border-color: #be2445;
+    background: #ffe1e7;
+}
+
+.option-grid {
+    width: min(410px, 100%);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.option-button {
+    min-height: 88px;
+    border: 2px solid rgba(58, 0, 21, 0.35);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 7px 18px rgba(88, 20, 56, 0.09);
+    cursor: pointer;
+    font-family: system-ui, sans-serif;
+    font-size: 2.75rem;
+    transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.option-button:hover {
+    transform: translateY(-3px) rotate(-1deg);
+    border-color: #a91670;
+    background: #fff2fa;
+}
+
+.option-button--error {
+    border-color: #be2445;
+    background: #ffe1e7;
+}
+
+.path-frame {
+    position: relative;
+    width: min(370px, 84vw);
+    overflow: hidden;
+    border: 2px solid rgba(58, 0, 21, 0.18);
+    border-radius: 20px;
+    background: #fcf8fc;
+    box-shadow: 0 10px 25px rgba(88, 20, 56, 0.1);
+}
+
+.path-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.path-button {
+    position: absolute;
+    top: 93.05%;
+    width: clamp(25px, 6.5vw, 38px);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    border: 2px solid #8c3f71;
+    border-radius: 50%;
+    background: #fffafc;
+    color: #74325f;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: clamp(0.72rem, 2.4vw, 1rem);
+    font-weight: 700;
+    transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.path-button:hover {
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(1.15);
+    background: #ffd8ef;
+}
+
+.path-button--error {
+    border-color: #a31336;
+    background: #ffb7c5;
+    color: #721027;
+}
+
+.path-button--success {
+    border-color: #307247;
+    background: #bdf0cc;
+    color: #19482a;
+}
+
+.letters-target {
+    margin: 3px 0 22px;
+    display: flex;
+    gap: clamp(5px, 1.4vw, 10px);
+}
+
+.letters-target span {
+    width: clamp(38px, 9vw, 58px);
+    height: clamp(45px, 10vw, 66px);
+    display: grid;
+    place-items: center;
+    border-bottom: 4px solid #b84f88;
+    color: rgba(58, 0, 21, 0.22);
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
+}
+
+.letters-list {
+    max-width: 100%;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    gap: clamp(5px, 1.4vw, 10px);
+    list-style: none;
+    touch-action: pan-y;
+}
+
+.letter-tile {
+    width: clamp(40px, 10vw, 62px);
+    height: clamp(50px, 12vw, 74px);
+    display: grid;
+    place-items: center;
+    border: 3px solid #3a0015;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #ffc8e9, #ff93d3);
+    box-shadow: 0 5px 0 #3a0015;
+    cursor: grab;
+    font-size: clamp(1.6rem, 5.5vw, 2.45rem);
+    font-weight: 700;
+    user-select: none;
+}
+
+.letter-tile:active {
+    cursor: grabbing;
+}
+
+.letter-tile--selected {
+    background: #fff2a9;
+    transform: translateY(-5px);
+}
+
+.letter-actions {
+    margin-top: 26px;
+}
+
+.secondary-button {
+    min-height: 46px;
+    padding: 7px 28px;
+    border-width: 2px;
+    box-shadow: 0 4px 0 #3a0015;
+    font-size: 1.25rem;
+}
+
+.feedback {
+    min-height: 28px;
+    margin: 16px 0 0;
+    font-size: 1.15rem;
+}
+
+.feedback--error {
+    color: #a31336;
+}
+
+.feedback--success {
+    color: #27653d;
+}
+
+.reveal-page {
+    gap: 18px;
+}
+
+.reveal-page h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.reveal-page p {
+    margin: -8px 0 0;
+    color: #713047;
+    font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+}
+
+.card-preview {
+    width: min(720px, 90vw);
+    overflow: hidden;
+    border: 3px solid #3a0015;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 17px 45px rgba(58, 0, 21, 0.2);
+}
+
+.card-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.result-page {
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+.result-page h1 {
+    margin-bottom: 0;
+}
+
+.result-page__message {
+    max-width: 680px;
+    margin: 0 0 8px;
+    color: #713047;
+    font-size: clamp(1.2rem, 2.7vw, 1.55rem);
+    line-height: 1.35;
+}
+
+.result-page .card-preview {
+    width: min(820px, 92vw);
+}
+
+.download-button {
+    min-height: 60px;
+    padding-inline: 38px;
+    background: #ff83ce;
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+@media (max-width: 560px) {
+    .app-page {
+        padding-inline: 14px;
+    }
+
+    .puzzle-shell {
+        width: 96vw;
+        min-height: calc(100dvh - 100px);
+        padding: 22px 15px;
+        border-radius: 22px;
+    }
+
+    .progress-bar {
+        width: 94vw;
+    }
+
+    .option-button {
+        min-height: 76px;
+    }
+
+    .puzzle-instruction {
+        margin-bottom: 14px;
+    }
+
+    .path-frame {
+        width: min(330px, 86vw);
+    }
+
+    .reveal-page {
+        justify-content: center;
+    }
+}
+
+@media (max-height: 720px) and (min-width: 700px) {
+    .puzzle-page {
+        padding-top: 16px;
+    }
+
+    .puzzle-shell {
+        min-height: auto;
+        padding-block: 20px;
+    }
+
+    .path-frame {
+        width: 285px;
+    }
+
+    .puzzle-instruction {
+        margin-block: 7px 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
