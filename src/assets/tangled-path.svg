@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="920" viewBox="0 0 820 920">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fcf8fc"/><stop offset="100%" stop-color="#f7f1f8"/></linearGradient>
+<radialGradient id="b1" cx="34%" cy="27%" r="76%"><stop offset="0%" stop-color="#ff83ce"/><stop offset="100%" stop-color="#a91670"/></radialGradient>
+<radialGradient id="b2" cx="34%" cy="27%" r="76%"><stop offset="0%" stop-color="#d980ff"/><stop offset="100%" stop-color="#5b188d"/></radialGradient>
+<radialGradient id="b3" cx="34%" cy="27%" r="76%"><stop offset="0%" stop-color="#ef86c4"/><stop offset="100%" stop-color="#821954"/></radialGradient>
+<filter id="balloonShadow" x="-30%" y="-30%" width="170%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#704460" flood-opacity="0.20"/></filter>
+<style><![CDATA[.string{fill:none;stroke:#b84f88;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.hit{fill:none;stroke:transparent;stroke-width:30;stroke-linecap:round;stroke-linejoin:round}.num{font-family:Arial;font-size:19px;font-weight:700;fill:#74325f;text-anchor:middle;dominant-baseline:middle}.label{fill:#fffafc;stroke:#8c3f71;stroke-width:3}]]></style>
+</defs><rect width="820" height="920" fill="url(#bg)"/>
+<g filter="url(#balloonShadow)">
+<g transform="rotate(-7 180 160)"><ellipse cx="180" cy="160" rx="91" ry="117" fill="url(#b1)" stroke="#76214f" stroke-width="2"/><path d="M135 118 C130 82 151 67 164 82 C170 101 161 137 151 149 C140 152 137 136 135 118 Z" fill="#fff" opacity="0.63"/><path d="M164 74 C173 58 181 54 187 59" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity="0.85"/><polygon points="173,274 187,274 180,300" fill="#86175a"/></g>
+<g transform="rotate(2 410 150)"><ellipse cx="410" cy="150" rx="96" ry="122" fill="url(#b2)" stroke="#46136e" stroke-width="2"/><path d="M363 110 C358 73 380 58 393 74 C399 94 390 132 380 143 C369 146 365 130 363 110 Z" fill="#fff" opacity="0.63"/><path d="M393 65 C402 49 411 45 417 50" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity="0.85"/><polygon points="403,272 417,272 410,299" fill="#58188b"/></g>
+<g transform="rotate(7 640 163)"><ellipse cx="640" cy="163" rx="91" ry="117" fill="url(#b3)" stroke="#6a1747" stroke-width="2"/><path d="M595 121 C590 84 612 69 625 85 C631 104 622 141 612 152 C601 155 597 139 595 121 Z" fill="#fff" opacity="0.63"/><path d="M625 77 C634 61 642 57 648 62" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity="0.85"/><polygon points="633,277 647,277 640,303" fill="#78184e"/></g></g>
+<g id="string-group-4"><path class="string" d="M 430 545
+C 510 535, 600 565, 580 615
+C 565 650, 512 666, 470 690
+C 430 714, 455 742, 520 748
+C 585 754, 605 792, 560 820
+C 528 840, 505 848, 480 856"/><path class="hit" d="M 430 545
+C 510 535, 600 565, 580 615
+C 565 650, 512 666, 470 690
+C 430 714, 455 742, 520 748
+C 585 754, 605 792, 560 820
+C 528 840, 505 848, 480 856"/></g>
+<g id="string-group-1"><path class="string" d="M 180 304
+C 165 347, 255 356, 321 392
+C 390 430, 258 447, 220 491
+C 178 540, 318 559, 392 521
+C 463 485, 560 504, 592 555
+C 623 605, 485 623, 418 590
+C 347 555, 268 610, 281 661
+C 294 711, 432 703, 501 680
+C 568 658, 651 703, 621 751
+C 590 799, 437 784, 351 806
+C 276 825, 218 842, 170 856"/><path class="hit" d="M 180 304
+C 165 347, 255 356, 321 392
+C 390 430, 258 447, 220 491
+C 178 540, 318 559, 392 521
+C 463 485, 560 504, 592 555
+C 623 605, 485 623, 418 590
+C 347 555, 268 610, 281 661
+C 294 711, 432 703, 501 680
+C 568 658, 651 703, 621 751
+C 590 799, 437 784, 351 806
+C 276 825, 218 842, 170 856"/></g>
+<g id="string-group-3"><path class="string" d="M 640 307
+C 665 345, 601 370, 531 390
+C 460 410, 500 459, 571 475
+C 642 491, 670 535, 620 570
+C 570 606, 470 600, 430 640
+C 390 681, 460 721, 541 710
+C 620 699, 650 750, 601 790
+C 562 821, 600 840, 636 856"/><path class="hit" d="M 640 307
+C 665 345, 601 370, 531 390
+C 460 410, 500 459, 571 475
+C 642 491, 670 535, 620 570
+C 570 606, 470 600, 430 640
+C 390 681, 460 721, 541 710
+C 620 699, 650 750, 601 790
+C 562 821, 600 840, 636 856"/></g>
+<g id="string-group-2"><path class="string" d="M 410 303
+C 451 335, 560 349, 541 395
+C 521 442, 380 428, 330 471
+C 279 515, 349 556, 430 545
+C 510 535, 600 565, 580 615
+C 560 660, 435 648, 340 675
+C 255 699, 228 742, 270 772
+C 306 797, 341 821, 316 856"/><path class="hit" d="M 410 303
+C 451 335, 560 349, 541 395
+C 521 442, 380 428, 330 471
+C 279 515, 349 556, 430 545
+C 510 535, 600 565, 580 615
+C 560 660, 435 648, 340 675
+C 255 699, 228 742, 270 772
+C 306 797, 341 821, 316 856"/></g>
+<g><circle class="label" cx="170" cy="856" r="22"/><text class="num" x="170" y="856">1</text><circle class="label" cx="316" cy="856" r="22"/><text class="num" x="316" y="856">2</text><circle class="label" cx="480" cy="856" r="22"/><text class="num" x="480" y="856">3</text><circle class="label" cx="636" cy="856" r="22"/><text class="num" x="636" y="856">4</text></g>
+</svg>
